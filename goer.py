@@ -34,3 +34,4 @@ def get_goed_image(img):
     output = io.BytesIO()
     base.save(output, format='PNG')
     base.save("output.png")
+    return output.getvalue()
